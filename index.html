@@ -9,17 +9,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav class="shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <span class="fw-bold fs-5"><img src="./images/loo.svg" alt="red insect logo" width="100" height="100"></span>
-      <ul class="nav gap-3" id="nav-links">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+    <img src="./images/loo.svg" class="bi me-2" width="150" height="50" aria-hidden="true">
+    <span class="fs-4"></span> </a> 
+    <ul class="nav nav-pills"> <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li> 
+      <li class="nav-item"><a href="#services" class="nav-link">Services</a></li> 
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li> 
+      <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li> 
+    </ul> 
+  </header> 
 
   <section id="home" class="fade-in">
     <div class="container py-5 mt-5">
@@ -182,30 +180,38 @@
     </div>
   </section>
   
-
-  <footer id="footer" class="bg-dark text-light py-5">
+  <footer class="contact bg-dark text-white py-5" id="footer">
     <div class="container text-center">
       <h4 class="mb-3">Get in Touch</h4>
-      <p class="mb-3">Have questions or need a quote? We’re here to help.</p>
-      <a href="mailto:h.rhangani@gmail.com" class="btn btn-outline-light mb-4">
-        <i class="bi bi-envelope-fill me-2"></i>h.rhangani@gmail.com
+      <p class="mb-4">Have questions or need a quote? We’re here to help.</p>
+  
+      <a href="mailto:h.rhangani@gmail.com" class="btn btn-outline-light mb-3">
+        <i class="bi bi-envelope-fill me-2"></i> h.rhangani@gmail.com
+      </a><br>
+      <a href="tel:+27815790210" class="btn btn-outline-light mb-3">
+        <i class="bi bi-telephone-fill me-2"></i> 081 579 0210
       </a>
-      <a href="tel:+27815790210" class="btn btn-outline-light mb-4">
-        <i class="bi bi-telephone-fill me-2"></i>081 579 0210
-      </a>
-      
-      <div class="d-flex justify-content-center gap-4 mb-3">
+  
+      <div class="mt-4">
+        <a href="https://www.instagram.com/PestEra" target="_blank" class="text-light fs-4 me-3" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
         <a href="https://www.facebook.com/PestEra" target="_blank" class="text-light fs-4" aria-label="Facebook">
           <i class="bi bi-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/PestEra" target="_blank" class="text-light fs-4" aria-label="Instagram">
-          <i class="bi bi-instagram"></i>
-        </a>
       </div>
-
-      <p class="small mb-0">&copy; 2025 Pest Era. All rights reserved.</p>
+  
+      <ul class="nav justify-content-center border-top pt-4 mt-4">
+        <li class="nav-item"><a href="#home" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link px-2 text-light">Services</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-light">About</a></li>
+        <li class="nav-item"><a href="#footer" class="nav-link px-2 text-light">Contact</a></li>
+      </ul>
+  
+      <p class="text-center text-secondary mt-3 mb-0">© 2025 PESTERA. All rights reserved.</p>
     </div>
   </footer>
+  
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
